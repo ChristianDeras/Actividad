@@ -4,7 +4,7 @@ public class Principal {
 		//MarioZ5
 		System.out.println("Como usted diga don");
         System.out.println("Enjoy it");
-        System.out.println("Acá con esto sabremos quien hizo que y como y a ala vez no nos toca unir todo ")
+        System.out.println("Acá con esto sabremos quien hizo que y como y a ala vez no nos toca unir todo ");
         
     }
 }
