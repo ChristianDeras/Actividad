@@ -4,5 +4,6 @@ public class Principal {
         //instanciando Escuela 
         Escuela c1 = new Escuela();
         //todo mi code
+		//ya termine todo
     }
 }
