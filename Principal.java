@@ -76,7 +76,18 @@ public class Principal {
                         
                     break;
                     case 16:
-                        
+					System.out.println("-----USTED HA ELEGIDO PARQUE------");
+					//instanciando la clase Parque para enviarle los valores al objeto
+					Parque P1 = new Parque();
+					//accediendo al objeto Parque bajo el nombre de P1 para enviar los datos a la clase plantilla
+					System.out.println("Ingrese el precio de la entrada");
+					P1.Precio_entrada = leer.nextDouble();
+                    System.out.println("Ingrese la cantidad de atracciones");
+					P1.Cantidad_atracciones = leer.nextInt();
+					System.out.println("Ingrese la cantidad de vendedores que hay en el parque");
+					P1.Cantidad_vendedores = leer.nextInt();
+					System.out.println("Ingrese la cantidad de arboles que hay en el parque");
+					P1.Cantidad_vendedores = leer.nextInt();
                     break;
                     case 17:
                         
