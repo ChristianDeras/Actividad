@@ -118,31 +118,70 @@ public class Principal {
 							System.out.println("-----------------------------------------------");
                     break;
                     case 18:
-							System.out.println("-----USTED HA ELEGIDO HOTEL------");
-							//instanciando la clase Hotel para enviarle los valores al objeto
-							Hotel H2 = new Hotel();
-							//accediendo al objeto Hotel bajo el nombre de H1 para enviar los datos a la clase plantilla
-							System.out.println("Ingrese cantidad de departamentos disponibles");
-							H2.Departementos_disponible = leer.nextInt();
-							System.out.println("Ingrese la cantidad de despartamentos ocupados");
-							H2.Departamentos_ocupados = leer.nextInt();
-							System.out.println("Ingrese la cantidad de personas en el hotel");
-							H2.Cantidad_Personas = leer.nextInt();
-							System.out.println("Ingrese la cantidad de departamentos que tiene el hotel");
-							H2.Total_Departamentos = leer.nextInt();
+							System.out.println("-----USTED HA ELEGIDO BANCO------");
+							//instanciando la clase Banco para enviarle los valores al objeto
+							Banco B1 = new Banco();
+							//accediendo al objeto Banco bajo el nombre de B1 para enviar los datos a la clase plantilla
+							System.out.println("Ingrese su nombre");
+							B1.Nombre_cuenta = leer.nextLine();
+							System.out.println("Ingrese el id de su cuenta");
+							B1.id_Cuenta = leer.nextInt();
+							System.out.println("La cantidad de dinero guardado es");
+							B1.Dinero_Guardado = leer.nextDouble();
+							System.out.println("Ingrese la cantidad que quiere retirar");
+							B1.Cantidad_Retirar = leer.nextDouble();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
-                            System.out.println("La cantidad de departamentos disponibles : "+H2.Departementos_disponible);
-                            System.out.println("La cantidad de despartamentos ocupados: "+H2.Departamentos_ocupados);
-                            System.out.println("Ingrese la cantidad de personas en el hotel: "+H2.Cantidad_Personas);
-							System.out.println("La cantidad de departamentos que tiene el hotel: "+H2.Total_Departamentos);
+                            System.out.println("Su nombre es : "+B1.String Nombre_cuenta);
+                            System.out.println("Su ID de cuenta es: "+B1.id_Cuenta);
+                            System.out.println("El dinero guardado es: "+B1.Dinero_Guardado);
+							System.out.println("La cantidad ah retirar es: "+B1.Cantidad_Retirar);
 							System.out.println("-----------------------------------------------");
                         
                     break;
                     case 19:
+							System.out.println("-----USTED HA ELEGIDO IGLESIA------");
+							//instanciando la clase Iglesia para enviarle los valores al objeto
+							Iglesia I1 = new Iglesia();
+							//accediendo al objeto Iglesia bajo el nombre de I1 para enviar los datos a la clase plantilla
+							System.out.println("Ingrese el nombre de la iglesia");
+							I1.Nombre_iglesia = leer.nextLine();
+							System.out.println("Ingrese el la direccion de la iglesia");
+							I1.Direccion_iglesia = leer.nextInt();
+							System.out.println("Ingrese la cantidad de sillas");
+							I1.Cantidad_sillas = leer.nextDouble();
+							System.out.println("Ingrese las personas que asisten");
+							I1.Personas_asistencia = leer.nextDouble();
+							//Imprimiendo los valores 
+                            System.out.println("-----------------------------------------------");
+                            System.out.println("El nombre de la iglesia es : "+I1.String Nombre_iglesia);
+                            System.out.println("La direcion de la iglesia es: "+I1.Direccion_iglesia);
+                            System.out.println("Total de sillas es: "+I1.Cantidad_sillas);
+							System.out.println("Cantidad de personasn que asisten : "+I1.Personas_asistencia);
+							System.out.println("-----------------------------------------------");
+                        
                         
                     break;
                     case 20:
+					System.out.println("-----USTED HA ELEGIDO FARMACIA------");
+							//instanciando la clase Farmacia para enviarle los valores al objeto
+							Farmacia F1 = new Farmacia();
+							//accediendo al objeto Farmacia bajo el nombre de F1 para enviar los datos a la clase plantilla
+							System.out.println("Ingrese nombre de la farmacia");
+							F1.Nombre_Farmacia = leer.nextLine();
+							System.out.println("Ingrese la direccion de la farmacia");
+							F1.Direccion_Farmacia = leer.nextLine();
+							System.out.println("cantidad de medicamentos disponicles");
+							F1.Medicamentos_Disponible = leer.nextDouble();
+							System.out.println("cantidad de medicamentos reservados");
+							F1.Medicamentos_Reservados = leer.nextDouble();
+							//Imprimiendo los valores 
+                            System.out.println("-----------------------------------------------");
+                            System.out.println("El nombre de la farmacia es: "+F1.Nombre_Farmacia);
+                            System.out.println("La direccion de la farmacia es: "+F1.Direccion_Farmacia);
+                            System.out.println("Cantidad de medicamentos disponibles: "+F1.Medicamentos_Disponible);
+							System.out.println("Cantidad de medicamentos reservados: "+F1.Medicamentos_Reservados);
+							System.out.println("-----------------------------------------------");
                         
                     break;
 
