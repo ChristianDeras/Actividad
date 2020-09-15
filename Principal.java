@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String Args[]) {
         int respuesta = 1;
+        Scanner leer = new Scanner(System.in);
         //Creando el menú
         while (respuesta != 0) {
             System.out.println("-----------------------INGRESE QUE OBJETO DESEA INSTANCIAR----------------------------");
@@ -48,7 +49,6 @@ public class Principal {
                     break;
                     case 11:
                             System.out.println("-----USTED HA ELEGIDO SUELDO------");
-                            Scanner leer = new Scanner(System.in);
                             //instanciando la clase sueldos para enviarle los valores al objeto
                             Sueldos s1 = new Sueldos();
                             //accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
@@ -65,6 +65,24 @@ public class Principal {
                             System.out.println("El sueldo del empleado es "+s1.sueldo);
                     break;
                     case 12:
+                            System.out.println("-----USTED HA ELEGIDO ALCALDIA------");
+                            //instanciando la clase sueldos para enviarle los valores al objeto
+                            Alcaldia ac = new Alcaldia();
+                            //accediendo al objeto Alcaldía bajo el nombre de ac para enviar los datos a la clase plantilla
+                            System.out.println("Ingrese el nombre de la alcaldía");
+                            ac.nombre_alcaldia = leer.nextLine();
+                            System.out.println("Ingrese el Departamemto");
+                            ac.Departamento =leer.nextLine();
+                            System.out.println("Ingrese el Numero telefónico");
+                            ac.numero_celular = leer.nextInt();
+                            System.out.println("Ingrese el municipio");
+                            ac.Municipio = leer.nextLine();
+                            //Imprimiendo los valores 
+                            System.out.println("-----------------------------------------------");
+                            System.out.println("El nombre de la alcaldia es: "+ac.nombre_alcaldia);
+                            System.out.println("El Departamento de la alcaldia es: "+ac.Departamento);
+                            System.out.println("El Numero de telefono es: "+ac.numero_celular);
+                            System.out.println("El Municipio es: "+ac.Municipio);
                         
                     case 13:
                         
@@ -76,7 +94,7 @@ public class Principal {
                         
                     break;
                     case 16:
-							System.out.println("-----USTED HA ELEGIDO PARQUE------");
+                            System.out.println("-----USTED HA ELEGIDO PARQUE------");
 							//instanciando la clase Parque para enviarle los valores al objeto
 							Parque P1 = new Parque();
 							//accediendo al objeto Parque bajo el nombre de P1 para enviar los datos a la clase plantilla
