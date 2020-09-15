@@ -147,11 +147,11 @@ public class Principal {
 							System.out.println("Ingrese el nombre de la iglesia");
 							I1.Nombre_iglesia = leer.nextLine();
 							System.out.println("Ingrese el la direccion de la iglesia");
-							I1.Direccion_iglesia = leer.nextInt();
+							I1.Direccion_iglesia = leer.nextLine();
 							System.out.println("Ingrese la cantidad de sillas");
-							I1.Cantidad_sillas = leer.nextDouble();
+							I1.Cantidad_sillas = leer.nextInt();
 							System.out.println("Ingrese las personas que asisten");
-							I1.Personas_asistencia = leer.nextDouble();
+							I1.Personas_asistencia = leer.nextInt();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
                             System.out.println("El nombre de la iglesia es : "+I1.String Nombre_iglesia);
