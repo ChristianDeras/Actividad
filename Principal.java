@@ -97,24 +97,24 @@ public class Principal {
 							System.out.println("-----------------------------------------------");
                     break;
                     case 17:
-							System.out.println("-----USTED HA ELEGIDO HOSPITAL------");
-							//instanciando la clase Hospital para enviarle los valores al objeto
-							Hospital H1 = new Hospital();
-							//accediendo al objeto Hospital bajo el nombre de H1 para enviar los datos a la clase plantilla
-							System.out.println("Ingrese el precio de la Cita");
-							H1.Precio_cita = leer.nextDouble();
-							System.out.println("Ingrese la cantidad de Doctores");
-							H1.Cantidad_doctores = leer.nextInt();
-							System.out.println("Ingrese la cantidad de Enfermeras");
-							H1.Cantidad_enfermeras = leer.nextInt();
-							System.out.println("Ingrese la cantidad de Camas");
-							H1.Cantidad_camas = leer.nextInt();
+							System.out.println("-----USTED HA ELEGIDO HOTEL------");
+							//instanciando la clase Hotel para enviarle los valores al objeto
+							Hotel H2 = new Hotel();
+							//accediendo al objeto Hotel bajo el nombre de H1 para enviar los datos a la clase plantilla
+							System.out.println("Ingrese la cantidad de habitaciones disponibles");
+							H2.habitaciones_disponible = leer.nextInt();
+							System.out.println("Ingrese la cantidad de habitaciones ocupados");
+							H2.habitaciones_ocupados = leer.nextInt();
+							System.out.println("Ingrese la cantidad de habitaciones reservadas ");
+							H2.habitaciones_reservados = leer.nextInt();
+							System.out.println("Ingrese la cantidad total de habitaciones que posee el hotel");
+							H2.Total_habitaciones = leer.nextInt();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
-                            System.out.println("El precio de la Cita es: "+H1.Precio_cita);
-                            System.out.println("La cantidad de Doctores: "+H1.Cantidad_doctores);
-                            System.out.println("La cantidad de enfermeras: "+H1.Cantidad_enfermeras);
-							System.out.println("La cantidad de Camas: "+H1.Cantidad_camas);
+                            System.out.println("El precio de la Cita es: "+H2.habitaciones_disponible);
+                            System.out.println("La cantidad de Doctores: "+H2.habitaciones_ocupados);
+                            System.out.println("La cantidad de enfermeras: "+H2.habitaciones_reservados);
+							System.out.println("La cantidad de Camas: "+H2.Total_habitaciones);
 							System.out.println("-----------------------------------------------");
                     break;
                     case 18:
