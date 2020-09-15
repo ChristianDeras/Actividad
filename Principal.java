@@ -1,4 +1,4 @@
-Import clases.*;
+import clases.*;
 import java.util.Scanner;
 public class Principal {
     public static void main(String Args[]) {
@@ -77,9 +77,8 @@ public class Principal {
                     break;
                     case 16:
 					System.out.println("-----USTED HA ELEGIDO PARQUE------");
-					Scanner leer = new Scanner(System.in);
 					//instanciando la clase Parque para enviarle los valores al objeto
-					 Parque P1 = new Parque();
+					Parque P1 = new Parque();
 					//accediendo al objeto Parque bajo el nombre de P1 para enviar los datos a la clase plantilla
 					System.out.println("Ingrese el precio de la entrada");
 					P1.Precio_entrada = leer.nextDouble();
