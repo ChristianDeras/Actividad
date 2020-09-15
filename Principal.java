@@ -35,7 +35,7 @@ public class Principal {
                     System.out.println("-----USTED HA ELEGIDO PARQUE------");
                     //instanciando la clase Familia para enviarle los valores al objeto
                     Familia fa1 = new Familia();
-                    //accediendo al objeto Parque bajo el nombre de P1 para enviar los datos a la clase plantilla
+                    //accediendo al objeto Familia bajo el nombre de fa1 para enviar los datos a la clase plantilla
                     System.out.println("Ingrese el nombre del familiar");
                     fa1.nombre = leer.nextDouble();
                     System.out.println("Ingrese el genero al que pertenece");
@@ -46,10 +46,10 @@ public class Principal {
                     fa1.lugar_residencia = leer.nextInt();
                     //Imprimiendo los valores 
                     System.out.println("-----------------------------------------------");
-                    System.out.println("El nombre de los familiares es: "+P1.nombre);
-                    System.out.println("El genero de los familiares es: "+P1.genero);
-                    System.out.println("La religuion es: "+P1.religion);
-                    System.out.println("El lugar donde reside la familia: "+P1.lugar_residencia);
+                    System.out.println("El nombre de los familiares es: "+fa1.nombre);
+                    System.out.println("El genero de los familiares es: "+fa1.genero);
+                    System.out.println("La religuion es: "+fa1.religion);
+                    System.out.println("El lugar donde reside la familia: "+fa1.lugar_residencia);
                     System.out.println("-----------------------------------------------");
                     break;
                     case 7:
