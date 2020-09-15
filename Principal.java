@@ -172,9 +172,9 @@ public class Principal {
 							System.out.println("Ingrese la direccion de la farmacia");
 							F1.Direccion_Farmacia = leer.nextLine();
 							System.out.println("cantidad de medicamentos disponicles");
-							F1.Medicamentos_Disponible = leer.nextDouble();
+							F1.Medicamentos_Disponible = leer.nextInt();
 							System.out.println("cantidad de medicamentos reservados");
-							F1.Medicamentos_Reservados = leer.nextDouble();
+							F1.Medicamentos_Reservados = leer.nextInt();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
                             System.out.println("El nombre de la farmacia es: "+F1.Nombre_Farmacia);
