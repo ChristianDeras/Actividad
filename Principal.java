@@ -28,7 +28,7 @@ public class Principal {
 							cs.numero_casa = leer.nextInt();
 							System.out.println("Ingrese el color de la casa");
 							cs.color = leer.nextLine();
-							System.out.println("Ingrese el tamaño de la casa");
+							System.out.println("Ingrese el tamanio de la casa");
 							cs.tamanio = leer.nextDouble();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
