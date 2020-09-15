@@ -100,7 +100,7 @@ public class Principal {
 							System.out.println("-----USTED HA ELEGIDO HOTEL------");
 							//instanciando la clase Hotel para enviarle los valores al objeto
 							Hotel H2 = new Hotel();
-							//accediendo al objeto Hotel bajo el nombre de H1 para enviar los datos a la clase plantilla
+							//accediendo al objeto Hotel bajo el nombre de H2 para enviar los datos a la clase plantilla
 							System.out.println("Ingrese la cantidad de habitaciones disponibles");
 							H2.habitaciones_disponible = leer.nextInt();
 							System.out.println("Ingrese la cantidad de habitaciones ocupados");
