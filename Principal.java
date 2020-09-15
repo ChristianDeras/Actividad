@@ -76,23 +76,67 @@ public class Principal {
                         
                     break;
                     case 16:
-					System.out.println("-----USTED HA ELEGIDO PARQUE------");
-					//instanciando la clase Parque para enviarle los valores al objeto
-					Parque P1 = new Parque();
-					//accediendo al objeto Parque bajo el nombre de P1 para enviar los datos a la clase plantilla
-					System.out.println("Ingrese el precio de la entrada");
-					P1.Precio_entrada = leer.nextDouble();
-                    System.out.println("Ingrese la cantidad de atracciones");
-					P1.Cantidad_atracciones = leer.nextInt();
-					System.out.println("Ingrese la cantidad de vendedores que hay en el parque");
-					P1.Cantidad_vendedores = leer.nextInt();
-					System.out.println("Ingrese la cantidad de arboles que hay en el parque");
-					P1.Cantidad_vendedores = leer.nextInt();
+							System.out.println("-----USTED HA ELEGIDO PARQUE------");
+							//instanciando la clase Parque para enviarle los valores al objeto
+							Parque P1 = new Parque();
+							//accediendo al objeto Parque bajo el nombre de P1 para enviar los datos a la clase plantilla
+							System.out.println("Ingrese el precio de la entrada");
+							P1.Precio_entrada = leer.nextDouble();
+							System.out.println("Ingrese la cantidad de atracciones");
+							P1.Cantidad_atracciones = leer.nextInt();
+							System.out.println("Ingrese la cantidad de vendedores que hay en el parque");
+							P1.Cantidad_vendedores = leer.nextInt();
+							System.out.println("Ingrese la cantidad de arboles que hay en el parque");
+							P1.Cantidad_arboles = leer.nextInt();
+							//Imprimiendo los valores 
+                            System.out.println("-----------------------------------------------");
+                            System.out.println("El precio de la entrada es: "+P1.Precio_entrada);
+                            System.out.println("La cantidad de atracciones: "+P1.Cantidad_atracciones);
+                            System.out.println("La cantidad de vendedores: "+P1.Cantidad_vendedores);
+							System.out.println("La cantidad de arboles: "+P1.Cantidad_arboles);
+							System.out.println("-----------------------------------------------");
                     break;
                     case 17:
-                        
+							System.out.println("-----USTED HA ELEGIDO HOSPITAL------");
+							//instanciando la clase Hospital para enviarle los valores al objeto
+							Hospital H1 = new Hospital();
+							//accediendo al objeto Hospital bajo el nombre de H1 para enviar los datos a la clase plantilla
+							System.out.println("Ingrese el precio de la Cita");
+							H1.Precio_cita = leer.nextDouble();
+							System.out.println("Ingrese la cantidad de Doctores");
+							H1.Cantidad_doctores = leer.nextInt();
+							System.out.println("Ingrese la cantidad de Enfermeras");
+							H1.Cantidad_enfermeras = leer.nextInt();
+							System.out.println("Ingrese la cantidad de Camas");
+							H1.Cantidad_camas = leer.nextInt();
+							//Imprimiendo los valores 
+                            System.out.println("-----------------------------------------------");
+                            System.out.println("El precio de la Cita es: "+H1.Precio_cita);
+                            System.out.println("La cantidad de Doctores: "+H1.Cantidad_doctores);
+                            System.out.println("La cantidad de enfermeras: "+H1.Cantidad_enfermeras);
+							System.out.println("La cantidad de Camas: "+H1.Cantidad_camas);
+							System.out.println("-----------------------------------------------");
                     break;
                     case 18:
+							System.out.println("-----USTED HA ELEGIDO HOTEL------");
+							//instanciando la clase Hotel para enviarle los valores al objeto
+							Hotel H2 = new Hotel();
+							//accediendo al objeto Hotel bajo el nombre de H1 para enviar los datos a la clase plantilla
+							System.out.println("Ingrese cantidad de departamentos disponibles");
+							H2.Departementos_disponible = leer.nextInt();
+							System.out.println("Ingrese la cantidad de despartamentos ocupados");
+							H2.Departamentos_ocupados = leer.nextInt();
+							System.out.println("Ingrese la cantidad de personas en el hotel");
+							H2.Cantidad_Personas = leer.nextInt();
+							System.out.println("Ingrese la cantidad de departamentos que tiene el hotel");
+							H2.Total_Departamentos = leer.nextInt();
+							//Imprimiendo los valores 
+                            System.out.println("-----------------------------------------------");
+                            System.out.println("La cantidad de departamentos disponibles : "+H2.Departementos_disponible);
+                            System.out.println("La cantidad de despartamentos ocupados: "+H2.Departamentos_ocupados);
+                            System.out.println("Ingrese la cantidad de personas en el hotel: "+H2.Cantidad_Personas);
+							System.out.println("La cantidad de departamentos que tiene el hotel: "+H2.Total_Departamentos);
+							System.out.println("-----------------------------------------------");
                         
                     break;
                     case 19:
