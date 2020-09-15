@@ -47,6 +47,8 @@ public class Principal {
                         
                     break;
                     case 11:
+                            System.out.println("-----USTED HA ELEGIDO SUELDO------");
+                            Scanner leer = new Scanner(System.in);
                             //instanciando la clase sueldos para enviarle los valores al objeto
                             Sueldos s1 = new Sueldos();
                             //accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
