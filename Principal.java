@@ -123,7 +123,7 @@ public class Principal {
 							Banco B1 = new Banco();
 							//accediendo al objeto Banco bajo el nombre de B1 para enviar los datos a la clase plantilla
 							System.out.println("Ingrese su nombre");
-							B1.Nombre_cuenta = leer.nextLine();
+							B1.Nombre_Cuenta = leer.nextLine();
 							System.out.println("Ingrese el id de su cuenta");
 							B1.id_Cuenta = leer.nextInt();
 							System.out.println("La cantidad de dinero guardado es");
@@ -132,7 +132,7 @@ public class Principal {
 							B1.Cantidad_Retirar = leer.nextDouble();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
-                            System.out.println("Su nombre es : "+B1.String Nombre_cuenta);
+                            System.out.println("Su nombre es : "+B1.Nombre_Cuenta);
                             System.out.println("Su ID de cuenta es: "+B1.id_Cuenta);
                             System.out.println("El dinero guardado es: "+B1.Dinero_Guardado);
 							System.out.println("La cantidad ah retirar es: "+B1.Cantidad_Retirar);
@@ -154,7 +154,7 @@ public class Principal {
 							I1.Personas_asistencia = leer.nextInt();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
-                            System.out.println("El nombre de la iglesia es : "+I1.String Nombre_iglesia);
+                            System.out.println("El nombre de la iglesia es : "+I1.Nombre_iglesia);
                             System.out.println("La direcion de la iglesia es: "+I1.Direccion_iglesia);
                             System.out.println("Total de sillas es: "+I1.Cantidad_sillas);
 							System.out.println("Cantidad de personasn que asisten : "+I1.Personas_asistencia);
