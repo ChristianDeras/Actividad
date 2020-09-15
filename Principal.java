@@ -20,7 +20,7 @@ public class Principal {
                     case 1:
                             System.out.println("-----USTED HA ELEGIDO CASA------");
 							//instanciando la clase sueldos para enviarle los valores al objeto
-							casa x1 = new casa();
+							Casa x1 = new Casa();
 							//accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
 							System.out.println("Ingrese la direccion de la casa");
 							x1.direccion = leer.nextLine();
