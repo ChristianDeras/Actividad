@@ -111,10 +111,10 @@ public class Principal {
 							H2.Total_habitaciones = leer.nextInt();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
-                            System.out.println("El precio de la Cita es: "+H2.habitaciones_disponible);
-                            System.out.println("La cantidad de Doctores: "+H2.habitaciones_ocupados);
-                            System.out.println("La cantidad de enfermeras: "+H2.habitaciones_reservados);
-							System.out.println("La cantidad de Camas: "+H2.Total_habitaciones);
+                            System.out.println("La cantidad de Habitaciones disponibles : "+H2.habitaciones_disponible);
+                            System.out.println("Cantidad de habitaciones ocupadas : "+H2.habitaciones_ocupados);
+                            System.out.println("Cantidad de habitaciones reservadas: "+H2.habitaciones_reservados);
+							System.out.println("cantidad total de habitaciones que tiene el hotel: "+H2.Total_habitaciones);
 							System.out.println("-----------------------------------------------");
                     break;
                     case 18:
