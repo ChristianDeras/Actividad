@@ -47,8 +47,7 @@ public class Principal {
                         
                     break;
                     case 11:
-                            System.out.println("----USTED HA SELECCIONADO SUELDO----");
-                            //instanciando a Scanner para leer datos
+                            System.out.println("-----USTED HA ELEGIDO SUELDO------");
                             Scanner leer = new Scanner(System.in);
                             //instanciando la clase sueldos para enviarle los valores al objeto
                             Sueldos s1 = new Sueldos();
