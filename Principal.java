@@ -18,7 +18,25 @@ public class Principal {
             if (respuesta>0 && respuesta<=20) {
                 switch (respuesta) {
                     case 1:
-                        
+                            System.out.println("-----USTED HA ELEGIDO SUELDO------");
+							//instanciando la clase sueldos para enviarle los valores al objeto
+							casa x1 = new casa();
+							//accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
+							System.out.println("Ingrese la direccion de la casa");
+							x1.direccion = leer.nextLine();
+							System.out.println("Ingrese el numero de casa");
+							x1.numero_casa = leer.nextInt();
+							System.out.println("Ingrese el color de la casa");
+							x1.color = leer.nextLine();
+							System.out.println("Ingrese el tamaño de la casa");
+							x1.tamanio = leer.nextDouble();
+							//Imprimiendo los valores 
+                            System.out.println("-----------------------------------------------");
+							System.out.println("La direccion de la casa es: "+x1.direccion);
+                            System.out.println("El numero de casa es: "+x1.numero_casa);
+                            System.out.println("El color de la casa es "+x1.color);
+							System.out.println("El tamaño de la casa es "+x1.tamanio);
+							
                     break;
                     case 2:
                         
