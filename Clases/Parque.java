@@ -1,5 +1,5 @@
 package clases;
-//clase parque
+//clase parques
 public class Parque{
 	public double Precio_entrada;
 	public int Cantidad_atracciones;
