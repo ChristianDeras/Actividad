@@ -115,7 +115,7 @@ public class Principal {
 							System.out.println("Ingrese el nombre del docente");
 							U.nombre_docente = leer.nextLine();
 							System.out.println("Ingrese la cantidad de pupitres");
-							U.cant_pupitres = nextLine();
+							U.cant_pupitres = leer.nextInt();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
 							System.out.println("El codigo del edificio es: "+U.cod_edificio);
