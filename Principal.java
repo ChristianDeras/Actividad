@@ -39,7 +39,24 @@ public class Principal {
 							
                     break;
                     case 2:
-                        
+                            System.out.println("-----USTED HA ELEGIDO PRODUCTO------");
+                            //instanciando la clase sueldos para enviarle los valores al objeto
+                            producto pd = new producto();
+                            //accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
+                            System.out.println("Ingrese la marca");
+                            pd.marca = leer.nextLine();
+                            System.out.println("Ingrese el codigo");
+                            pd.codigo = leer.nextLine();
+                            System.out.println("Ingrese el precio");
+                            pd.precio = leer.nextDouble();
+                            System.out.println("Ingrese la fecha de caducidad");
+                            pd.fecha_de_caducidad = leer.nextLine();
+                            //Imprimiendo los valores 
+                            System.out.println("-----------------------------------------------");
+                            System.out.println("La marca del producto es: "+pd.marca);
+                            System.out.println("El codigo del producto es: "+pd.codigo);
+                            System.out.println("El precio del producto es: "+pd.precio);
+							System.out.println("La fecha de caducidad es: "+pd.fecha_de_caducidad);
                     break;
                     case 3:
                         
