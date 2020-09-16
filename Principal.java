@@ -45,14 +45,15 @@ public class Principal {
                          producto pd = new producto();
                         // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
                         // clase plantilla
+                        System.out.println("Ingrese el precio");
+                        pd.precio = leer.nextDouble();
                         System.out.println("Ingrese la marca");
                         pd.marca = leer.nextLine();
                         System.out.println("Ingrese el codigo");
                         pd.codigo = leer.nextLine();
                         System.out.println("Ingrese la fecha de caducidad");
                         pd.fecha = leer.nextLine();
-                        System.out.println("Ingrese el precio");
-                        pd.precio = leer.nextDouble();
+                        
 
                         // Imprimiendo los valores
                         System.out.println("-----------------------------------------------");
@@ -67,20 +68,21 @@ public class Principal {
                          celular cl = new celular();
                         // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
                         // clase plantilla
-                        System.out.println("Ingrese la marca");
-                        cl.marca = leer.nextLine();
+                        leer.nextLine();
                         System.out.println("Ingrese el procesador del dispositivo");
                         cl.procesador = leer.nextLine();
+                        System.out.println("Ingrese la marca");
+                        cl.marca = leer.nextLine();
                         System.out.println("Ingrese la cantidad de bateria del dispositivo");
                         cl.bateria = leer.nextInt();
                         System.out.println("Ingrese los pixeles de la camara");
-                        pd.precio = leer.nextDouble();
+                        cl.camara = leer.nextDouble();
                         // Imprimiendo los valores
                         System.out.println("-----------------------------------------------");
                         System.out.println("La marca del dispositivo es: " + cl.marca);
                         System.out.println("La bateria del dispositivo es: " + cl.bateria);
                         System.out.println("El procesador es: " + cl.procesador);
-                        System.out.println("El precio del dispositivo es: " + cl.precio);
+                        System.out.println("El precio del dispositivo es: " + cl.camara);
 
                         break;
                     case 4:
@@ -152,7 +154,7 @@ public class Principal {
                     case 7:
 						System.out.println("-----USTED HA ELEGIDO SALON DE CLASES------");
 							//instanciando la clase Salon_clase para enviarle los valores al objeto
-							Salon_clase slc = new Libros();
+							Salon_clase slc = new Salon_clase();
 							//accediendo al objeto sueldos bajo el nombre de slc para enviar los datos a la clase plantilla
 							System.out.println("Ingrese la cantidad de alumnos en el salon");
 							slc.cant_alum = leer.nextInt();
@@ -193,7 +195,7 @@ public class Principal {
                     case 9:
 						System.out.println("-----USTED HA ELEGIDO  ASIGNATURA------");
 							//instanciando la clase Asignatura para enviarle los valores al objeto
-							Asignatura asg = new Libros();
+							Asignatura asg = new Asignatura();
 							//accediendo al objeto sueldos bajo el nombre de asg para enviar los datos a la clase plantilla
 							System.out.println("Ingrese el nombre de su asignatura");
 							asg.nomb_asig = leer.nextLine();
@@ -214,7 +216,7 @@ public class Principal {
                     case 10:
 						System.out.println("-----USTED HA ELEGIDO  CARERRA------");
 							//instanciando la clase Carrera para enviarle los valores al objeto
-							Carrera crr = new Libros();
+							Carrera crr = new Carrera();
 							//accediendo al objeto sueldos bajo el nombre de crr para enviar los datos a la clase plantilla
 							System.out.println("Ingrese el nombre de su carrera");
 							crr.nom_carrera = leer.nextLine();
