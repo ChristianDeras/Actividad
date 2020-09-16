@@ -19,9 +19,9 @@ public class Principal {
                 switch (respuesta) {
                     case 1:
                             System.out.println("-----USTED HA ELEGIDO CASA------");
-							//instanciando la clase sueldos para enviarle los valores al objeto
+							//instanciando la clase casa  para enviarle los valores al objeto
 							Casa cs = new Casa();
-							//accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
+							//accediendo al objeto casa bajo el nombre de cs para enviar los datos a la clase plantilla
 							System.out.println("Ingrese la direccion de la casa");
 							cs.Direccion = leer.nextLine();
 							System.out.println("Ingrese el numero de casa");
@@ -40,9 +40,9 @@ public class Principal {
                     break;
                     case 2:
                             System.out.println("-----USTED HA ELEGIDO PRODUCTO------");
-                            //instanciando la clase sueldos para enviarle los valores al objeto
+                            //instanciando la clase producto para enviarle los valores al objeto
                             producto pd = new producto();
-                            //accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
+                            //accediendo al objeto producto bajo el nombre de pd para enviar los datos a la clase plantilla
                             System.out.println("Ingrese la marca");
                             pd.marca = leer.nextLine();
                             System.out.println("Ingrese el codigo");
@@ -60,9 +60,9 @@ public class Principal {
                     break;
                     case 3:
 							System.out.println("-----USTED HA ELEGIDO CELULAR------");
-							//instanciando la clase sueldos para enviarle los valores al objeto
+							//instanciando la clase celular para enviarle los valores al objeto
 							celular cl = new celular();
-							//accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
+							//accediendo al objeto celular bajo el nombre de cl para enviar los datos a la clase plantilla
 							System.out.println("Ingrese la marca");
 							cl.marca = leer.nextLine();
 							System.out.println("Ingrese el procesador del dispositivo");
@@ -80,10 +80,10 @@ public class Principal {
 					
                     break;
                     case 4:
-							System.out.println("-----USTED HA ELEGIDO CELULAR------");
-							//instanciando la clase sueldos para enviarle los valores al objeto
+							System.out.println("-----USTED HA ELEGIDO FIESTA------");
+							//instanciando la clase fiesta para enviarle los valores al objeto
 							fiesta ft = new fiesta();
-							//accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
+							//accediendo al objeto fiesta bajo el nombre de ft para enviar los datos a la clase plantilla
 							System.out.println("Ingrese el nombre del DJ");
 							ft.nombre_dj = leer.nextLine();
 							System.out.println("Ingrese la cantidad de globos");
@@ -101,10 +101,10 @@ public class Principal {
 							
                     break;
                     case 5:
-							System.out.println("-----USTED HA ELEGIDO CELULAR------");
-							//instanciando la clase sueldos para enviarle los valores al objeto
+							System.out.println("-----USTED HA ELEGIDO UNIVERSIDAD------");
+							//instanciando la clase universidad para enviarle los valores al objeto
 							universidad U = new universidad();
-							//accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
+							//accediendo al objeto universidad bajo el nombre de U para enviar los datos a la clase plantilla
 							System.out.println("Ingrese el codigo del edificio");
 							U.cod_edificio = leer.nextLine();
 							System.out.println("Ingrese el codigo del aula");
@@ -112,7 +112,7 @@ public class Principal {
 							System.out.println("Ingrese el nombre del docente");
 							U.nombre_docente = leer.nextLine();
 							System.out.println("Ingrese la cantidad de pupitres");
-							U.cant_pupitres = nextLine();
+							U.cant_pupitres = nextInt();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
 							System.out.println("El codigo del edificio es: "+U.cod_edificio);
