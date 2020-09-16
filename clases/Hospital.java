@@ -1,5 +1,5 @@
 package clases;
-
+//comprobar
 public class Hospital{
 	public double Precio_cita;
 	public int Cantidad_doctores;
