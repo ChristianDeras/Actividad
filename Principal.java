@@ -25,18 +25,18 @@ public class Principal {
 							Casa cs = new Casa();
 							//accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
 							System.out.println("Ingrese la direccion de la casa");
-							cs.Direccion = leer2.nextLine();
+                            cs.Direccion = leer2.nextLine();
+                            System.out.println("Ingrese el color de la casa");
+							cs.color_casa = leer2.nextLine();
 							System.out.println("Ingrese el numero de casa");
 							cs.numero_casa = leer2.nextInt();
-							System.out.println("Ingrese el color de la casa");
-							cs.color = leer2.nextLine();
 							System.out.println("Ingrese el tamanio de la casa");
 							cs.tamanio = leer2.nextDouble();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
 							System.out.println("La direccion de la casa es: "+cs.Direccion);
                             System.out.println("El numero de casa es: "+cs.numero_casa);
-                            System.out.println("El color de la casa es "+cs.color);
+                            System.out.println("El color de la casa es "+cs.color_casa);
 							System.out.println("El tamaño de la casa es "+cs.tamanio);
 							
                     break;
@@ -49,10 +49,11 @@ public class Principal {
                             pd.marca = leer.nextLine();
                             System.out.println("Ingrese el codigo");
                             pd.codigo = leer.nextLine();
-                            System.out.println("Ingrese el precio");
-                            pd.precio = leer.nextDouble();
                             System.out.println("Ingrese la fecha de caducidad");
                             pd.fecha = leer.nextLine();
+                            System.out.println("Ingrese el precio");
+                            pd.precio = leer.nextDouble();
+                            
                             //Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
                             System.out.println("La marca del producto es: "+pd.marca);
@@ -123,15 +124,16 @@ public class Principal {
                             System.out.println("-----USTED HA ELEGIDO ALCALDIA------");
                             //instanciando la clase Alcaldia para enviarle los valores al objeto
                             Alcaldia ac = new Alcaldia();
-                            //accediendo al objeto Alcaldía bajo el nombre de ac para enviar los datos a la clase plantilla
-                            System.out.println("Ingrese el nombre de la alcaldía");
-                            ac.nombre_alcaldia = leer.nextLine();
+                            //accediendo al objeto Alcaldía bajo el nombre de ac para enviar los datos a la clase plantilla   
                             System.out.println("Ingrese el Departamemto");
                             ac.Departamento =leer.nextLine();
-                            System.out.println("Ingrese el Numero telefónico");
-                            ac.numero_celular = leer.nextInt();
+                            System.out.println("Ingrese el nombre de la alcaldía");
+                            ac.nombre_alcaldia = leer.nextLine();
                             System.out.println("Ingrese el municipio");
                             ac.Municipio = leer.nextLine();
+                            System.out.println("Ingrese el Numero telefónico");
+                            ac.numero_celular = leer.nextInt();
+                            
                             //Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
                             System.out.println("El nombre de la alcaldia es: "+ac.nombre_alcaldia);
@@ -319,7 +321,6 @@ public class Principal {
             }
 
         }
-        leer.close();
-        sc.close();
+        
     }
 }
