@@ -4,6 +4,7 @@ public class Principal {
     public static void main(String Args[]) {
         int respuesta = 1;
         Scanner leer = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         //Creando el menú
         while (respuesta != 0) {
             System.out.println("-----------------------INGRESE QUE OBJETO DESEA INSTANCIAR----------------------------");
@@ -13,23 +14,24 @@ public class Principal {
             System.out.println("-> 16.Parque    17.Hotel             18.Banco         19.Iglesia      20.Farmacia   <-");
             System.out.println("---------------------------INGRESE 0 PARA SALIR---------------------------------------");
 
-            Scanner sc = new Scanner(System.in);
+            
             respuesta = sc.nextInt();
             if (respuesta>0 && respuesta<=20) {
                 switch (respuesta) {
                     case 1:
                             System.out.println("-----USTED HA ELEGIDO CASA------");
+                            Scanner leer2 = new Scanner(System.in);
 							//instanciando la clase sueldos para enviarle los valores al objeto
 							Casa cs = new Casa();
 							//accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
 							System.out.println("Ingrese la direccion de la casa");
-							cs.Direccion = leer.nextLine();
+							cs.Direccion = leer2.nextLine();
 							System.out.println("Ingrese el numero de casa");
-							cs.numero_casa = leer.nextInt();
+							cs.numero_casa = leer2.nextInt();
 							System.out.println("Ingrese el color de la casa");
-							cs.color = leer.nextLine();
+							cs.color = leer2.nextLine();
 							System.out.println("Ingrese el tamanio de la casa");
-							cs.tamanio = leer.nextDouble();
+							cs.tamanio = leer2.nextDouble();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
 							System.out.println("La direccion de la casa es: "+cs.Direccion);
@@ -50,13 +52,13 @@ public class Principal {
                             System.out.println("Ingrese el precio");
                             pd.precio = leer.nextDouble();
                             System.out.println("Ingrese la fecha de caducidad");
-                            pd.fecha_de_caducidad = leer.nextLine();
+                            pd.fecha = leer.nextLine();
                             //Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
                             System.out.println("La marca del producto es: "+pd.marca);
                             System.out.println("El codigo del producto es: "+pd.codigo);
                             System.out.println("El precio del producto es: "+pd.precio);
-							System.out.println("La fecha de caducidad es: "+pd.fecha_de_caducidad);
+							System.out.println("La fecha de caducidad es: "+pd.fecha);
                     break;
                     case 3:
                         
@@ -317,5 +319,7 @@ public class Principal {
             }
 
         }
+        leer.close();
+        sc.close();
     }
 }
