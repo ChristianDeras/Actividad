@@ -65,10 +65,10 @@ public class Principal {
 							//accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
 							System.out.println("Ingrese la marca");
 							cl.marca = leer.nextLine();
-							System.out.println("Ingrese la cantidad de bateria del dispositivo");
-							cl.bateria = leer.nextInt();
 							System.out.println("Ingrese el procesador del dispositivo");
 							cl.procesador = leer.nextLine();
+							System.out.println("Ingrese la cantidad de bateria del dispositivo");
+							cl.bateria = leer.nextInt();
 							System.out.println("Ingrese los pixeles de la camara");
 							pd.precio = leer.nextDouble();
 							//Imprimiendo los valores 
@@ -84,15 +84,15 @@ public class Principal {
 							//instanciando la clase sueldos para enviarle los valores al objeto
 							fiesta ft = new fiesta();
 							//accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la clase plantilla
+							System.out.println("Ingrese el nombre del DJ");
+							ft.nombre_dj = leer.nextLine();
 							System.out.println("Ingrese la cantidad de globos");
 							ft.cant_globos = leer.nextInt();
 							System.out.println("Ingrese la cantidad de personas");
 							ft.cant_personas = leer.nextInt();
 							System.out.println("Ingrese la cantidad de comida");
 							ft.cant_comida = leer.nextInt();
-							System.out.println("Ingrese el nombre del DJ");
-							ft.nombre_dj = leer.nextLine();
-							//Imprimiendo los valores 
+							//Imprimiendo los valores
                             System.out.println("-----------------------------------------------");
 							System.out.println("La cantidad de globos para la fiesta son: "+ft.cant_globos);
 							System.out.println("La cantidad de personas para la fiesta son: "+ft.cant_personas);
