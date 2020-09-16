@@ -34,22 +34,22 @@ public class Principal {
                     case 6:
                     System.out.println("-----USTED HA ELEGIDO PARQUE------");
                     //instanciando la clase Familia para enviarle los valores al objeto
-                    Familia fa1 = new Familia();
-                    //accediendo al objeto Familia bajo el nombre de fa1 para enviar los datos a la clase plantilla
+                    Familia f1 = new Familia();
+                    //accediendo al objeto Familia bajo el nombre de f1 para enviar los datos a la clase plantilla
                     System.out.println("Ingrese el nombre del familiar");
-                    fa1.nombre = leer.nextDouble();
+                    f1.nombres = leer.nextLine();
                     System.out.println("Ingrese el genero al que pertenece");
-                    fa1.genero = leer.nextInt();
+                    f1.genero = leer.nextLine();
                     System.out.println("Ingrese la religion a la que pertenece");
-                    fa1.religion = leer.nextInt();
+                    f1.religion = leer.nextLine();
                     System.out.println("Ingrese la direccion de su recidencia ");
-                    fa1.lugar_residencia = leer.nextInt();
+                    f1.lugar_residencia = leer.nextLine();
                     //Imprimiendo los valores 
                     System.out.println("-----------------------------------------------");
-                    System.out.println("El nombre de los familiares es: "+fa1.nombre);
-                    System.out.println("El genero de los familiares es: "+fa1.genero);
-                    System.out.println("La religuion es: "+fa1.religion);
-                    System.out.println("El lugar donde reside la familia: "+fa1.lugar_residencia);
+                    System.out.println("El nombre de los familiares es: "+f1.nombres);
+                    System.out.println("El genero de los familiares es: "+f1.genero);
+                    System.out.println("La religuion es: "+f1.religion);
+                    System.out.println("El lugar donde reside la familia: "+f1.lugar_residencia);
                     System.out.println("-----------------------------------------------");
                     break;
                     case 7:
