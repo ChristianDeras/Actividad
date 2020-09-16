@@ -1,8 +1,8 @@
 package clases;
 
 public class Hotel{
-	public int Departementos_disponible;
-	public int Departamentos_ocupados;
-	public int Cantidad_Personas;
-	public int Total_Departamentos;
+	public int habitaciones_disponible;
+	public int habitaciones_ocupados;
+	public int habitaciones_reservados;
+	public int Total_habitaciones;
 }
