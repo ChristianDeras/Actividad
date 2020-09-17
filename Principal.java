@@ -14,23 +14,22 @@ public class Principal {
             System.out.println("-> 16.Parque    17.Hotel             18.Banco         19.Iglesia      20.Farmacia   <-");
             System.out.println("---------------------------INGRESE 0 PARA SALIR---------------------------------------");
             respuesta = sc.nextInt();
-            if (respuesta > 0 && respuesta <= 20) {
+
                 switch (respuesta) {
                     case 1:
-                        System.out.println("-----USTED HA ELEGIDO CASA------");
-                         Scanner leer2 = new Scanner(System.in);
+                        System.out.println("-----USTED HA ELEGIDO CASA------"); 
                         // instanciando la clase sueldos para enviarle los valores al objeto
                          Casa cs = new Casa();
                         // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
                         // clase plantilla
                         System.out.println("Ingrese la direccion de la casa");
-                        cs.Direccion = leer2.nextLine();
+                        cs.Direccion = leer.nextLine();
                         System.out.println("Ingrese el color de la casa");
-                        cs.color_casa = leer2.nextLine();
+                        cs.color_casa = leer.nextLine();
                         System.out.println("Ingrese el numero de casa");
-                        cs.numero_casa = leer2.nextInt();
+                        cs.numero_casa = leer.nextInt();
                         System.out.println("Ingrese el tamanio de la casa");
-                        cs.tamanio = leer2.nextDouble();
+                        cs.tamanio = leer.nextDouble();
                         // Imprimiendo los valores
                         System.out.println("-----------------------------------------------");
                         System.out.println("La direccion de la casa es: " + cs.Direccion);
@@ -452,13 +451,10 @@ public class Principal {
                         
                     break;
 
-                    default:
+                    default:System.out.println("Valor invalido intente de nuevo");
                         break;
                 }
-            } else{
-                System.out.println("No existe ese numero en el indice de la tabla intente de nuevo");
-                
-            }
+            
 
         }
         
