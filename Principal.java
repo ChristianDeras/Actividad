@@ -48,6 +48,7 @@ public class Principal {
                         pd.precio = leer.nextDouble();
                         System.out.println("Ingrese la marca");
                         pd.marca = leer.nextLine();
+                        pd.marca = leer.nextLine();
                         System.out.println("Ingrese el codigo");
                         pd.codigo = leer.nextLine();
                         System.out.println("Ingrese la fecha de caducidad");
