@@ -391,6 +391,7 @@ public class Principal {
                         // clase plantilla
                         System.out.println("Ingrese su nombre");
                         B1.Nombre_Cuenta = leer.nextLine();
+						B1.Nombre_Cuenta = leer.nextLine();
                         System.out.println("Ingrese el id de su cuenta");
                         B1.id_Cuenta = leer.nextInt();
                         System.out.println("La cantidad de dinero guardado es");
@@ -414,7 +415,8 @@ public class Principal {
                         // clase plantilla
                         System.out.println("Ingrese el nombre de la iglesia");
                         I1.Nombre_iglesia = leer.nextLine();
-                        System.out.println("Ingrese el la direccion de la iglesia");
+						I1.Nombre_iglesia = leer.nextLine();
+                        System.out.println("Ingrese la direccion de la iglesia");
                         I1.Direccion_iglesia = leer.nextLine();
                         System.out.println("Ingrese la cantidad de sillas");
                         I1.Cantidad_sillas = leer.nextInt();
@@ -436,9 +438,10 @@ public class Principal {
 							//accediendo al objeto Farmacia bajo el nombre de F1 para enviar los datos a la clase plantilla
 							System.out.println("Ingrese nombre de la farmacia");
 							F1.Nombre_Farmacia = leer.nextLine();
+							F1.Nombre_Farmacia = leer.nextLine();
 							System.out.println("Ingrese la direccion de la farmacia");
 							F1.Direccion_Farmacia = leer.nextLine();
-							System.out.println("cantidad de medicamentos disponicles");
+							System.out.println("cantidad de medicamentos disponibles");
 							F1.Medicamentos_Disponible = leer.nextInt();
 							System.out.println("cantidad de medicamentos reservados");
 							F1.Medicamentos_Reservados = leer.nextInt();
