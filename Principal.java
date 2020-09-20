@@ -262,6 +262,7 @@ public class Principal {
                         ac.Departamento = leer.nextLine();
                         System.out.println("Ingrese el nombre de la alcaldía");
                         ac.nombre_alcaldia = leer.nextLine();
+                        ac.nombre_alcaldia = leer.nextLine();
                         System.out.println("Ingrese el municipio");
                         ac.Municipio = leer.nextLine();
                         System.out.println("Ingrese el Numero telefónico");
