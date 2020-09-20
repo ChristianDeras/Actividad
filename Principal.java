@@ -25,7 +25,7 @@ public class Principal {
                         System.out.println("Ingrese la direccion de la casa");
                         cs.Direccion = leer.nextLine();
                         System.out.println("Ingrese el color de la casa");
-                        cs.color_casa = leer.nextLine();
+                        cs.color = leer.nextLine();
                         System.out.println("Ingrese el numero de casa");
                         cs.numero_casa = leer.nextInt();
                         System.out.println("Ingrese el tamanio de la casa");
@@ -34,7 +34,7 @@ public class Principal {
                         System.out.println("-----------------------------------------------");
                         System.out.println("La direccion de la casa es: " + cs.Direccion);
                         System.out.println("El numero de casa es: " + cs.numero_casa);
-                        System.out.println("El color de la casa es " + cs.color_casa);
+                        System.out.println("El color de la casa es " + cs.color);
                         System.out.println("El tamaño de la casa es " + cs.tamanio);
 
                         break;
@@ -52,7 +52,7 @@ public class Principal {
                         System.out.println("Ingrese el codigo");
                         pd.codigo = leer.nextLine();
                         System.out.println("Ingrese la fecha de caducidad");
-                        pd.fecha = leer.nextLine();
+                        pd.fecha_de_caducidad = leer.nextLine();
                         
 
                         // Imprimiendo los valores
@@ -60,7 +60,7 @@ public class Principal {
                         System.out.println("La marca del producto es: " + pd.marca);
                         System.out.println("El codigo del producto es: " + pd.codigo);
                         System.out.println("El precio del producto es: " + pd.precio);
-                        System.out.println("La fecha de caducidad es: " + pd.fecha);
+                        System.out.println("La fecha de caducidad es: " + pd.fecha_de_caducidad);
                         break;
                     case 3:
                         System.out.println("-----USTED HA ELEGIDO CELULAR------");
