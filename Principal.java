@@ -180,6 +180,7 @@ public class Principal {
                         lb.pre_libro = leer.nextDouble();
                         System.out.println("Ingrese el nombre del autor");
                         lb.nomb_aut = leer.nextLine();
+						   lb.nomb_aut = leer.nextLine();
                         System.out.println("Ingrese el nombre de la editorial");
                         lb.nomb_edit = leer.nextLine();
                         System.out.println("Ingrese el nombre del libro");
@@ -219,9 +220,10 @@ public class Principal {
 							//accediendo al objeto sueldos bajo el nombre de crr para enviar los datos a la clase plantilla
 							System.out.println("Ingrese el nombre de su carrera");
 							crr.nom_carrera = leer.nextLine();
+							crr.nom_carrera = leer.nextLine();
 							System.out.println("Ingrese la especialidad que lleva");
 							crr.especialidad = leer.nextLine();
-							System.out.println("Ingrese la cantidad de años en las que llevara esta carrera");
+							System.out.println("Ingrese la cantidad de anios en las que llevara esta carrera");
 							crr.anios_carrera = leer.nextInt();
 							System.out.println("Ingrese el codigo de su carrera");
 							crr.cod_carrera = leer.nextInt();
@@ -229,7 +231,7 @@ public class Principal {
                             System.out.println("-----------------------------------------------");
 							System.out.println("La especialidad de su carrera es : "+crr.especialidad);
 							System.out.println("El nombre de su carrera es : "+crr.nom_carrera);
-							System.out.println("Los años en los que terminara esta carrera: "+crr.anios_carrera);
+							System.out.println("Los anios en los que terminara esta carrera: "+crr.anios_carrera);
 							System.out.println("El codigo de su carrera es : "+crr.cod_carrera);
 
                         break;
