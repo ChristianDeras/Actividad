@@ -24,6 +24,7 @@ public class Principal {
                         // clase plantilla
                         System.out.println("Ingrese la direccion de la casa");
                         cs.Direccion = leer.nextLine();
+                        cs.Direccion = leer.nextLine();
                         System.out.println("Ingrese el color de la casa");
                         cs.color_casa = leer.nextLine();
                         System.out.println("Ingrese el numero de casa");
@@ -86,12 +87,13 @@ public class Principal {
 
                         break;
                     case 4:
-                        System.out.println("-----USTED HA ELEGIDO CELULAR------");
+                        System.out.println("-----USTED HA ELEGIDO FIESTA------");
                         // instanciando la clase sueldos para enviarle los valores al objeto
                          fiesta ft = new fiesta();
                         // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
                         // clase plantilla
                         System.out.println("Ingrese el nombre del DJ");
+                        ft.nombre_dj = leer.nextLine();
                         ft.nombre_dj = leer.nextLine();
                         System.out.println("Ingrese la cantidad de globos");
                         ft.cant_globos = leer.nextInt();
@@ -114,6 +116,7 @@ public class Principal {
                         // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
                         // clase plantilla
                         System.out.println("Ingrese el codigo del edificio");
+                        U.cod_edificio = leer.nextLine();
                         U.cod_edificio = leer.nextLine();
                         System.out.println("Ingrese el codigo del aula");
                         U.cod_aula = leer.nextLine();
@@ -246,11 +249,15 @@ public class Principal {
                         s1.id_empleado = leer.nextInt();
                         System.out.println("Ingrese el sueldo del empleado");
                         s1.sueldo = leer.nextDouble();
+                        System.out.println("Ingrese la profesion del empleado");
+                        s1.profesion = leer.nextLine();
+                        s1.profesion = leer.nextLine();
                         // Imprimiendo los valores
                         System.out.println("-----------------------------------------------");
                         System.out.println("El nombre del Empleado es: " + s1.Nombre_empleado);
                         System.out.println("El id del empleado es: " + s1.id_empleado);
                         System.out.println("El sueldo del empleado es " + s1.sueldo);
+                        System.out.println("La profesion del empleado es " + s1.profesion);
                         break;
                     case 12:
                         System.out.println("-----USTED HA ELEGIDO ALCALDIA------");
@@ -282,9 +289,11 @@ public class Principal {
                         // a la clase plantilla
                         System.out.println("Ingrese el nombre del restaurante");
                         res.Nombre_rest = leer.nextLine();
+                        res.Nombre_rest = leer.nextLine();
                         System.out.println("Ingrese la cantidad de sillas disponibles");
                         res.cantidad_sillas = leer.nextInt();
                         System.out.println("Ingrese la direccion: ");
+                        res.Direccion = leer.nextLine();
                         res.Direccion = leer.nextLine();
                         System.out.println("Ingrese el numero del celular");
                         res.num_cel = leer.nextInt();
@@ -302,6 +311,7 @@ public class Principal {
                         // accediendo al objeto Alcaldía bajo el nombre de ac para enviar los datos a la
                         // clase plantilla
                         System.out.println("Ingrese el nombre del Ciber");
+                        cb.Nombre = leer.nextLine();
                         cb.Nombre = leer.nextLine();
                         System.out.println("Ingrese la cantidad de Equipos");
                         cb.cantidad_equipos = leer.nextInt();
