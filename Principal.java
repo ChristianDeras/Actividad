@@ -155,23 +155,23 @@ public class Principal {
                         break;
                     case 7:
 						System.out.println("-----USTED HA ELEGIDO SALON DE CLASES------");
-							//instanciando la clase Salon_clase para enviarle los valores al objeto
-							Salon_clase slc = new Salon_clase();
-							//accediendo al objeto sueldos bajo el nombre de slc para enviar los datos a la clase plantilla
-							System.out.println("Ingrese la cantidad de alumnos en el salon");
-							slc.cant_alum = leer.nextInt();
-							System.out.println("Ingrese la cantidad de pupitres en el salon");
-							slc.cant_pupitres = leer.nextInt();
-							System.out.println("Ingrese el tamanio del salon");
-							slc.tam_salon = leer.nextDouble();
-							System.out.println("Ingrese el color del salon del clase");
-							slc.color = leer.nextLine();
-							//Imprimiendo los valores
-                            System.out.println("-----------------------------------------------");
-							System.out.println("La cantidad de alumnos son: "+slc.cant_alum);
-							System.out.println("La cantidad de pupitres son: "+slc.cant_pupitres);
-							System.out.println("El tamaño del salon es: "+slc.tam_salon);
-							System.out.println("El color del salon es: "+slc.color);
+						//instanciando la clase Salon_clase para enviarle los valores al objeto
+						Salon_clase slc = new Salon_clase();
+						//accediendo al objeto sueldos bajo el nombre de slc para enviar los datos a la clase plantilla
+						System.out.println("Ingrese la cantidad de alumnos en el salon");
+						slc.cant_alum = leer.nextInt();
+						System.out.println("Ingrese la cantidad de pupitres en el salon");
+						slc.cant_pupitres = leer.nextInt();
+						System.out.println("Ingrese el tamanio del salon");
+						slc.tam_salon = leer.nextDouble();
+						System.out.println("Ingrese el color del salon del clase");
+						slc.color = leer.nextLine();
+						//Imprimiendo los valores
+                        System.out.println("-----------------------------------------------");
+						System.out.println("La cantidad de alumnos son: "+slc.cant_alum);
+						System.out.println("La cantidad de pupitres son: "+slc.cant_pupitres);
+						System.out.println("El tamaño del salon es: "+slc.tam_salon);
+						System.out.println("El color del salon es: "+slc.color);
                         break;
                     case 8:
                         System.out.println("-----USTED HA ELEGIDO LIBROS------");
@@ -196,44 +196,44 @@ public class Principal {
                         break;
                     case 9:
 						System.out.println("-----USTED HA ELEGIDO  ASIGNATURA------");
-							//instanciando la clase Asignatura para enviarle los valores al objeto
-							Asignatura asg = new Asignatura();
-							//accediendo al objeto sueldos bajo el nombre de asg para enviar los datos a la clase plantilla
-							System.out.println("Ingrese el nombre de su asignatura");
-							asg.nomb_asig = leer.nextLine();
-							System.out.println("Ingrese el nombre del docente que le imparte la materia");
-							asg.nomb_doc = leer.nextLine();
-							//Aqui ingresara el turno en el que lleva su horario (Mañana,Tarde,Noche)
-							System.out.println("Ingrese el horario en el que lleva su materia");
-							asg.horario = leer.nextLine();
-							System.out.println("Ingrese el codigo de su asignatura");
-							asg.cod_asig = leer.nextInt();
-							//Imprimiendo los valores
-                            System.out.println("-----------------------------------------------");
-							System.out.println("El nombre de su asignatura es: "+asg.nomb_asig);
-							System.out.println("El nombre del docente de su asignatura es : "+asg.nomb_doc);
-							System.out.println("Su asignatura la lleva por la : "+asg.horario);
+						//instanciando la clase Asignatura para enviarle los valores al objeto
+						Asignatura asg = new Asignatura();
+						//accediendo al objeto sueldos bajo el nombre de asg para enviar los datos a la clase plantilla
+						System.out.println("Ingrese el nombre de su asignatura");
+						asg.nomb_asig = leer.nextLine();
+						System.out.println("Ingrese el nombre del docente que le imparte la materia");
+						asg.nomb_doc = leer.nextLine();
+						//Aqui ingresara el turno en el que lleva su horario (Mañana,Tarde,Noche)
+						System.out.println("Ingrese el horario en el que lleva su materia");
+						asg.horario = leer.nextLine();
+						System.out.println("Ingrese el codigo de su asignatura");
+						asg.cod_asig = leer.nextInt();
+						//Imprimiendo los valores
+                           System.out.println("-----------------------------------------------");
+						System.out.println("El nombre de su asignatura es: "+asg.nomb_asig);
+						System.out.println("El nombre del docente de su asignatura es : "+asg.nomb_doc);
+						System.out.println("Su asignatura la lleva por la : "+asg.horario);
 							System.out.println("El codigo de su materia es : "+asg.cod_asig);
                         break;
                     case 10:
 						System.out.println("-----USTED HA ELEGIDO  CARERRA------");
-							//instanciando la clase Carrera para enviarle los valores al objeto
-							Carrera crr = new Carrera();
-							//accediendo al objeto sueldos bajo el nombre de crr para enviar los datos a la clase plantilla
-							System.out.println("Ingrese el nombre de su carrera");
-							crr.nom_carrera = leer.nextLine();
-							System.out.println("Ingrese la especialidad que lleva");
-							crr.especialidad = leer.nextLine();
-							System.out.println("Ingrese la cantidad de años en las que llevara esta carrera");
-							crr.anios_carrera = leer.nextInt();
-							System.out.println("Ingrese el codigo de su carrera");
-							crr.cod_carrera = leer.nextInt();
-							//Imprimiendo los valores
-                            System.out.println("-----------------------------------------------");
-							System.out.println("La especialidad de su carrera es : "+crr.especialidad);
-							System.out.println("El nombre de su carrera es : "+crr.nom_carrera);
-							System.out.println("Los años en los que terminara esta carrera: "+crr.anios_carrera);
-							System.out.println("El codigo de su carrera es : "+crr.cod_carrera);
+						//instanciando la clase Carrera para enviarle los valores al objeto
+						Carrera crr = new Carrera();
+						//accediendo al objeto sueldos bajo el nombre de crr para enviar los datos a la clase plantilla
+						System.out.println("Ingrese el nombre de su carrera");
+						crr.nom_carrera = leer.nextLine();
+						System.out.println("Ingrese la especialidad que lleva");
+						crr.especialidad = leer.nextLine();
+						System.out.println("Ingrese la cantidad de años en las que llevara esta carrera");
+						crr.anios_carrera = leer.nextInt();
+						System.out.println("Ingrese el codigo de su carrera");
+						crr.cod_carrera = leer.nextInt();
+						//Imprimiendo los valores
+                           System.out.println("-----------------------------------------------");
+						System.out.println("La especialidad de su carrera es : "+crr.especialidad);
+						System.out.println("El nombre de su carrera es : "+crr.nom_carrera);
+						System.out.println("Los años en los que terminara esta carrera: "+crr.anios_carrera);
+						System.out.println("El codigo de su carrera es : "+crr.cod_carrera);
 
                         break;
                     case 11:
