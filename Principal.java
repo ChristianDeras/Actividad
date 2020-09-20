@@ -65,11 +65,10 @@ public class Principal {
                         break;
                     case 3:
                         System.out.println("-----USTED HA ELEGIDO CELULAR------");
-                        // instanciando la clase sueldos para enviarle los valores al objeto
+                        // instanciando la clase Celular para enviarle los valores al objeto
                          celular cl = new celular();
-                        // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
+                        // accediendo al objeto Celular bajo el nombre de cl para enviar los datos a la
                         // clase plantilla
-                        leer.nextLine();
                         System.out.println("Ingrese el procesador del dispositivo");
                         cl.procesador = leer.nextLine();
                         System.out.println("Ingrese la marca");
@@ -88,9 +87,9 @@ public class Principal {
                         break;
                     case 4:
                         System.out.println("-----USTED HA ELEGIDO FIESTA------");
-                        // instanciando la clase sueldos para enviarle los valores al objeto
+                        // instanciando la clase Fiesta para enviarle los valores al objeto
                          fiesta ft = new fiesta();
-                        // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
+                        // accediendo al objeto Fiesta bajo el nombre de ft para enviar los datos a la
                         // clase plantilla
                         System.out.println("Ingrese el nombre del DJ");
                         ft.nombre_dj = leer.nextLine();
@@ -110,10 +109,10 @@ public class Principal {
 
                         break;
                     case 5:
-                        System.out.println("-----USTED HA ELEGIDO CELULAR------");
-                        // instanciando la clase sueldos para enviarle los valores al objeto
+                        System.out.println("-----USTED HA ELEGIDO UNIVERSIDAD------");
+                        // instanciando la clase Universidad para enviarle los valores al objeto
                          universidad U = new universidad();
-                        // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
+                        // accediendo al objeto Universidad bajo el nombre de U para enviar los datos a la
                         // clase plantilla
                         System.out.println("Ingrese el codigo del edificio");
                         U.cod_edificio = leer.nextLine();
@@ -245,6 +244,7 @@ public class Principal {
                         // clase plantilla
                         System.out.println("Ingrese el nombre del empleado");
                         s1.Nombre_empleado = leer.nextLine();
+						s1.Nombre_empleado = leer.nextLine();
                         System.out.println("Ingrese el ID del empleado");
                         s1.id_empleado = leer.nextInt();
                         System.out.println("Ingrese el sueldo del empleado");
@@ -267,11 +267,12 @@ public class Principal {
                         // clase plantilla
                         System.out.println("Ingrese el Departamemto");
                         ac.Departamento = leer.nextLine();
-                        System.out.println("Ingrese el nombre de la alcaldía");
+						ac.Departamento = leer.nextLine();
+                        System.out.println("Ingrese el nombre de la alcaldia");
                         ac.nombre_alcaldia = leer.nextLine();
                         System.out.println("Ingrese el municipio");
                         ac.Municipio = leer.nextLine();
-                        System.out.println("Ingrese el Numero telefónico");
+                        System.out.println("Ingrese el Numero telefonico");
                         ac.numero_celular = leer.nextInt();
 
                         // Imprimiendo los valores
@@ -280,7 +281,7 @@ public class Principal {
                         System.out.println("El Departamento de la alcaldia es: " + ac.Departamento);
                         System.out.println("El Numero de telefono es: " + ac.numero_celular);
                         System.out.println("El Municipio es: " + ac.Municipio);
-
+						break;
                     case 13:
                         System.out.println("-----USTED HA ELEGIDO RESTAURANTES------");
                         // instanciando la clase restaurantes para enviarle los valores al objeto
@@ -289,12 +290,12 @@ public class Principal {
                         // a la clase plantilla
                         System.out.println("Ingrese el nombre del restaurante");
                         res.Nombre_rest = leer.nextLine();
-                        res.Nombre_rest = leer.nextLine();
+						res.Nombre_rest = leer.nextLine();
                         System.out.println("Ingrese la cantidad de sillas disponibles");
                         res.cantidad_sillas = leer.nextInt();
                         System.out.println("Ingrese la direccion: ");
                         res.Direccion = leer.nextLine();
-                        res.Direccion = leer.nextLine();
+						res.Direccion = leer.nextLine();
                         System.out.println("Ingrese el numero del celular");
                         res.num_cel = leer.nextInt();
                         // Imprimiendo los valores
@@ -312,7 +313,7 @@ public class Principal {
                         // clase plantilla
                         System.out.println("Ingrese el nombre del Ciber");
                         cb.Nombre = leer.nextLine();
-                        cb.Nombre = leer.nextLine();
+						cb.Nombre = leer.nextLine();
                         System.out.println("Ingrese la cantidad de Equipos");
                         cb.cantidad_equipos = leer.nextInt();
                         System.out.println("Ingrese El precio por 15 mins: ");
