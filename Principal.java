@@ -70,7 +70,7 @@ public class Principal {
 							System.out.println("Ingrese la cantidad de bateria del dispositivo");
 							cl.bateria = leer.nextInt();
 							System.out.println("Ingrese los pixeles de la camara");
-							pd.precio = leer.nextDouble();
+							cl.precio = leer.nextDouble();
 							//Imprimiendo los valores 
                             System.out.println("-----------------------------------------------");
 							System.out.println("La marca del dispositivo es: "+cl.marca);
