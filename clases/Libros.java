@@ -1,7 +1,7 @@
 package clases;
 
 public class Libros {
-    public int num_pag;
+    public Double pre_libro;
     public String nomb_aut;
     public String nomb_edit;
     public String nomb_libro;

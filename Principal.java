@@ -25,11 +25,7 @@ public class Principal {
                         System.out.println("Ingrese la direccion de la casa");
                         cs.Direccion = leer.nextLine();
                         System.out.println("Ingrese el color de la casa");
-                        cs.color = leer.nextLine();
                         System.out.println("Ingrese el numero de casa");
-                        cs.numero_casa = leer.nextInt();
-                        System.out.println("Ingrese el tamanio de la casa");
-                        cs.tamanio = leer.nextDouble();
                         // Imprimiendo los valores
                         System.out.println("-----------------------------------------------");
                         System.out.println("La direccion de la casa es: " + cs.Direccion);
@@ -52,15 +48,11 @@ public class Principal {
                         System.out.println("Ingrese el codigo");
                         pd.codigo = leer.nextLine();
                         System.out.println("Ingrese la fecha de caducidad");
-                        pd.fecha_de_caducidad = leer.nextLine();
                         
-
-                        // Imprimiendo los valores
-                        System.out.println("-----------------------------------------------");
                         System.out.println("La marca del producto es: " + pd.marca);
                         System.out.println("El codigo del producto es: " + pd.codigo);
                         System.out.println("El precio del producto es: " + pd.precio);
-                        System.out.println("La fecha de caducidad es: " + pd.fecha_de_caducidad);
+                        System.out.println("La fecha de caducidad es: " + pd.fecha);
                         break;
                     case 3:
                         System.out.println("-----USTED HA ELEGIDO CELULAR------");
@@ -68,10 +60,7 @@ public class Principal {
                          celular cl = new celular();
                         // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
                         // clase plantilla
-						System.out.println("Ingrese la marca del dispositivo");
                         leer.nextLine();
-                        System.out.println("Ingrese el procesador del dispositivo");
-                        cl.procesador = leer.nextLine();
                         System.out.println("Ingrese la marca");
                         cl.marca = leer.nextLine();
                         System.out.println("Ingrese la cantidad de bateria del dispositivo");
