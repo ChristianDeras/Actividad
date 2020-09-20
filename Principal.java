@@ -14,23 +14,22 @@ public class Principal {
             System.out.println("-> 16.Parque    17.Hotel             18.Banco         19.Iglesia      20.Farmacia   <-");
             System.out.println("---------------------------INGRESE 0 PARA SALIR---------------------------------------");
             respuesta = sc.nextInt();
-            if (respuesta > 0 && respuesta <= 20) {
+
                 switch (respuesta) {
                     case 1:
-                        System.out.println("-----USTED HA ELEGIDO CASA------");
-                         Scanner leer2 = new Scanner(System.in);
+                        System.out.println("-----USTED HA ELEGIDO CASA------"); 
                         // instanciando la clase sueldos para enviarle los valores al objeto
                          Casa cs = new Casa();
                         // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
                         // clase plantilla
                         System.out.println("Ingrese la direccion de la casa");
-                        cs.Direccion = leer2.nextLine();
+                        cs.Direccion = leer.nextLine();
                         System.out.println("Ingrese el color de la casa");
-                        cs.color_casa = leer2.nextLine();
+                        cs.color_casa = leer.nextLine();
                         System.out.println("Ingrese el numero de casa");
-                        cs.numero_casa = leer2.nextInt();
+                        cs.numero_casa = leer.nextInt();
                         System.out.println("Ingrese el tamanio de la casa");
-                        cs.tamanio = leer2.nextDouble();
+                        cs.tamanio = leer.nextDouble();
                         // Imprimiendo los valores
                         System.out.println("-----------------------------------------------");
                         System.out.println("La direccion de la casa es: " + cs.Direccion);
@@ -45,14 +44,16 @@ public class Principal {
                          producto pd = new producto();
                         // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
                         // clase plantilla
+                        System.out.println("Ingrese el precio");
+                        pd.precio = leer.nextDouble();
                         System.out.println("Ingrese la marca");
+                        pd.marca = leer.nextLine();
                         pd.marca = leer.nextLine();
                         System.out.println("Ingrese el codigo");
                         pd.codigo = leer.nextLine();
                         System.out.println("Ingrese la fecha de caducidad");
                         pd.fecha = leer.nextLine();
-                        System.out.println("Ingrese el precio");
-                        pd.precio = leer.nextDouble();
+                        
 
                         // Imprimiendo los valores
                         System.out.println("-----------------------------------------------");
@@ -67,10 +68,11 @@ public class Principal {
                          celular cl = new celular();
                         // accediendo al objeto sueldos bajo el nombre de s1 para enviar los datos a la
                         // clase plantilla
-                        System.out.println("Ingrese la marca");
-                        cl.marca = leer.nextLine();
+                        leer.nextLine();
                         System.out.println("Ingrese el procesador del dispositivo");
                         cl.procesador = leer.nextLine();
+                        System.out.println("Ingrese la marca");
+                        cl.marca = leer.nextLine();
                         System.out.println("Ingrese la cantidad de bateria del dispositivo");
                         cl.bateria = leer.nextInt();
                         System.out.println("Ingrese los pixeles de la camara");
@@ -389,6 +391,7 @@ public class Principal {
                         // clase plantilla
                         System.out.println("Ingrese su nombre");
                         B1.Nombre_Cuenta = leer.nextLine();
+						B1.Nombre_Cuenta = leer.nextLine();
                         System.out.println("Ingrese el id de su cuenta");
                         B1.id_Cuenta = leer.nextInt();
                         System.out.println("La cantidad de dinero guardado es");
@@ -412,7 +415,8 @@ public class Principal {
                         // clase plantilla
                         System.out.println("Ingrese el nombre de la iglesia");
                         I1.Nombre_iglesia = leer.nextLine();
-                        System.out.println("Ingrese el la direccion de la iglesia");
+						I1.Nombre_iglesia = leer.nextLine();
+                        System.out.println("Ingrese la direccion de la iglesia");
                         I1.Direccion_iglesia = leer.nextLine();
                         System.out.println("Ingrese la cantidad de sillas");
                         I1.Cantidad_sillas = leer.nextInt();
@@ -434,9 +438,10 @@ public class Principal {
 							//accediendo al objeto Farmacia bajo el nombre de F1 para enviar los datos a la clase plantilla
 							System.out.println("Ingrese nombre de la farmacia");
 							F1.Nombre_Farmacia = leer.nextLine();
+							F1.Nombre_Farmacia = leer.nextLine();
 							System.out.println("Ingrese la direccion de la farmacia");
 							F1.Direccion_Farmacia = leer.nextLine();
-							System.out.println("cantidad de medicamentos disponicles");
+							System.out.println("cantidad de medicamentos disponibles");
 							F1.Medicamentos_Disponible = leer.nextInt();
 							System.out.println("cantidad de medicamentos reservados");
 							F1.Medicamentos_Reservados = leer.nextInt();
@@ -450,13 +455,10 @@ public class Principal {
                         
                     break;
 
-                    default:
+                    default:System.out.println("Valor invalido intente de nuevo");
                         break;
                 }
-            } else{
-                System.out.println("No existe ese numero en el indice de la tabla intente de nuevo");
-                
-            }
+            
 
         }
         
